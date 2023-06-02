@@ -1,0 +1,73 @@
+@media (max-width: 560px),screen and (orientation: portrait){
+.navbar-brand,.img_plan>img{
+display: none;
+overflow: hidden;
+}
+.nav{
+flex-basis: auto;
+/* меняем направление основной оси шапки
+сайта */
+display: flex;
+align-items: flex-start;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.face+img{
+display: none; 
+overflow: hidden;  
+}
+.blue+img{
+display: none;
+}
+.car{
+padding-top: 0px;
+height: 90px;
+}
+.radio1{
+margin-left: 220px;
+}
+.t-body_header_1,.t-body_header_2,.t-body_header_l,.t-body_text,.imageT{
+left: 220px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+.header,.t-body,.footer{
+    padding:calc(20px+(50-20)*((100vw-320px)/(768-320)));
+    width: 100%;
+    }
+.navbar-brand,.img_plan{
+display: none;
+}
+.car{
+padding-top: 10px;
+height: 90px;
+}
+.radio1{
+    margin-left: 320px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+.header,.t-body,.footer{
+    padding:calc(20px+(50-20)*((100vw-320px)/(992-320)));
+    }
+.navbar-brand,.img_plan{
+display: none;
+}
+.car{
+padding-top: 10px;
+}
+.radio1{
+    margin-left: 420px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+.header,.t-body,.footer{
+    padding:calc(20px+(50-20)*((100vw-320px)/(1200-320)));
+    }
+.radio1{
+    margin-left: 450px;
+    }
+}
+
